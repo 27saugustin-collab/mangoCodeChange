@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Configuration
+SEARCH_DIR="."           # Directory to search (current dir)
+FILE_EXT="*.txt"         # File pattern to match
+TEXT_TO_ADD="Mango"
+
+echo "Searching in $SEARCH_DIR for $FILE_EXT..."
+
+# Find files and loop through them safely
+find "$SEARCH_DIR" -type f -name "$FILE_EXT" -print0 | while IFS= read -r -d '' file; do
+    echo "Appending to: $file"
+    
+    # Ensure there is a newline before appending if the file doesn't end with one
+    # (Optional safety check to prevent appending to the middle of the last line)
+    if [ -s "$file" ] && [ "$(tail -c1 "$file" | wc -l)" -eq 0 ]; then
+        echo "" >> "$file"
+    fi
+    echo "$TEXT_TO_ADD" >> "$file"
+done
+
+echo "Done."
