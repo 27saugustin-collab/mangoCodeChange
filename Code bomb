@@ -1,0 +1,7 @@
+import os
+
+# windows desktop
+# desktop = os.patdh.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
+
+# mac desktop
+desktop = os.path.join(os.path.expanduser("~"), "Desktop") 
