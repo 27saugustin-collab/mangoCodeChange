@@ -55,7 +55,7 @@ YOU ARE ON YOUR OWN.
 
 ## Enforcement Guidelines
 
-███ IS WATCHING. ███ IS JUDGE, JURY, AND EXECUTIONER.
+███ ARE WATCHING. ███ ARE JUDGE, JURY, AND EXECUTIONER.
 
 ## Attribution
 
