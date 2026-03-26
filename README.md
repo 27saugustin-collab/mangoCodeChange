@@ -1,7 +1,7 @@
 # TLDR:
-## 1. Download script
-## 2. Run in terminal
-## 3. Regret life choices
+## Step 1. Download script
+## Step 2. Run in terminal
+## Step 3. Regret life choices
 
 
 This project has "malware" that Saika, Jaiden, and Yasmine made for a project!
